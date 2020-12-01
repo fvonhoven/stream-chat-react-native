@@ -546,7 +546,7 @@ export const MessageList = <
             return null;
           }}
           maintainVisibleContentPosition={{
-            autoscrollToTopThreshold: hasMoreRecentMessages() ? -1000 : -1000,
+            autoscrollToTopThreshold: hasMoreRecentMessages() ? -1000 : 10,
             minIndexForVisible: 1,
           }}
           onEndReached={loadMore}
